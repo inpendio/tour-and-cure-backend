@@ -63,7 +63,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # tour-and-cure-backend
 
 
@@ -82,14 +81,13 @@ composer require laravel/ui   ///// implements UI, bootstrap, ...
  composer require barryvdh/laravel-debugbar   /// laravel debug
  php artisan migrate 
  npm i laravel-mix@latest --save-dev
-## REACT
  npm run watch  ////runs react
 
 
 
 
 
-## LARAVEL
+## LARAVEL /////////////////////////////////////////////
  php artisan serve --port=8080 ////selectes custom port
  php artisan serve
 
