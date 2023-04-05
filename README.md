@@ -65,3 +65,107 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # tour-and-cure-backend
+
+
+
+
+
+## chronological list of my input : 
+composer create-project laravel/laravel tour-and-cure-backend  ///creates project
+cd tour-and-cure-backend/
+php artisan preset react //// implements react
+composer require laravel/ui   ///// implements UI, bootstrap, ...
+ php artisan ui react   ///implements react ui
+ npm i vite
+ npm install && npm run dev   
+ php artisan ui:auth   /// instals login/register/forgot 
+ composer require barryvdh/laravel-debugbar   /// laravel debug
+ php artisan migrate 
+ npm i laravel-mix@latest --save-dev
+## REACT
+ npm run watch  ////runs react
+
+
+
+
+
+## LARAVEL
+ php artisan serve --port=8080 ////selectes custom port
+ php artisan serve
+
+## IMPORTANT - BLUE CHANGED LOG
+.env file 
+# APP_NAME=TourAndCure //no space
+APP_ENV=local
+APP_KEY=base64:6apiMJGN2NOwm01rXMLGRewLEqAeo3aR623J/rG+3Qg=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+# DB_PORT=8889
+# DB_DATABASE=tour_and_cure
+# DB_USERNAME=root
+# DB_PASSWORD=root
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DISK=local
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=mailpit
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+PUSHER_APP_CLUSTER=mt1
+
+VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+VITE_PUSHER_HOST="${PUSHER_HOST}"
+VITE_PUSHER_PORT="${PUSHER_PORT}"
+VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
+VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+
+
+
+# DATABASE - NEW on 8889 port - 
+SQL
+DB_PORT=8889
+DB_DATABASE=tour_and_cure
+DB_USERNAME=root
+DB_PASSWORD=root
+
+## IMPORTANT
+## After laravel install and npm installation and binding db tour_and_cure to project you must run migrations
+    php artisan migrate
+## IMPORTANT 2 - if something with php artisan is giving errors (canceled installations, old routes, ...etc) - this is 99% problem solver
+    php artisan config:clear
