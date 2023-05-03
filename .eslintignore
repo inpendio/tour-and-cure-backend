@@ -1,0 +1,7 @@
+**/*.test.*
+**/*.test2.*
+jest/*
+webpack/*
+babel.config.js
+.dockerignore
+vite.config.js

@@ -1,0 +1,13 @@
+{
+  // extend your base config so you don't have to redefine your compilerOptions
+  "extends": "./tsconfig.json",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": [
+    "node_modules/**",
+    "build/**",
+    "coverage/**",
+    "**/node_modules",
+    "./webpack/*",
+    "babel.config.json"
+  ]
+}
